@@ -1,0 +1,565 @@
+*{
+    box-sizing: border-box;
+    
+
+}
+html{
+    scroll-behavior: smooth;
+    
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 5px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    background-color: rgb(12, 12, 12);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.76),
+        rgba(0, 0, 0, 0.801)
+    )
+    ,url("img/bosque.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;  
+    
+
+
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2em;}
+h3{font-size: 1.5em;}
+p{font-size: 1.25; color: aliceblue; }
+
+button{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px 38px;
+    text-align: justify;
+    border-radius: 30px;
+    border: 2.5px solid black;
+    box-shadow: 2px 2px 10px      rgba(36, 226, 83, 0.753);
+}
+
+button:hover{
+     background-color: black;
+     color: white;
+}
+.container{
+    max-width: 1700px;
+    margin:0;
+    
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.336);
+    position: fixed;
+    padding: 0;
+      width: 100%;
+      z-index: 1001;
+      margin-top: -10px;
+    
+}
+
+
+header .logo{
+   margin: 0;
+   display: inline-block;
+   padding: 0px 10px;
+   font-weight: bold;
+   font-size: 3em;
+   font-family: 'Pokemon solid';
+   color:yellow;
+   -webkit-text-stroke:1px  blue;
+   transform: rotate(-10deg);
+
+   
+   
+
+}
+
+
+
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:auto;
+  }
+
+
+
+
+#hero{
+    align-items: center;
+    justify-content: center;
+    text-align: center ;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.76),
+        rgba(0, 0, 0, 0.801)
+    )
+    ,url("img/bosque.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;    
+}
+
+#hero .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#hero h1{
+    color: rgb(216, 216, 216);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 150px;
+    padding: 30px 0px;
+    font-weight: bold;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#hero h2{
+    font-size: 2em;
+}
+
+#hero  button{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+#select-monster{
+    padding: 111px 0px;
+    text-align: center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.76),
+        rgba(0, 0, 0, 0.801)
+    )
+    ,url("img/bosque.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;    
+    
+}
+    
+
+#select-monster h2{
+    font-size: 30px;
+    color:white;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+    
+}
+.tarjetas{
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    grid-template-columns: repeat(2, .1fr);
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+
+.tarjeta-mokepon{
+    width: 198px;
+    height: 231px;
+    font-size: 17px;
+    color: aliceblue;
+    border: 1.5px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 10px rgba(36, 226, 83, 0.753);
+    background-color: rgba(0, 0, 0, 0.678);
+    display: flex;
+    margin: 10px;
+    border-radius: 22px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tarjeta-mokepon img{
+    width: 135;
+    height: 153px;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   margin-left: 3px;
+}
+
+.tarjeta-mokepon img:hover{
+    width: 155px;
+    height: 156px;
+}
+
+.tarjeta-mokepon:hover{
+    border: 3px solid rgb(255, 0, 0);
+    box-shadow: 2px 2px 10px rgba(255, 127, 22, 0.753);
+    background-color: rgba(0, 0, 0, 0.678);
+}
+
+#selct-monster {
+    gap: 3px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+#select-monster input{
+   display:none;
+}
+
+
+
+#select-monster button{
+    font-size: 1.5em;
+    display: flex;
+}
+#seleccionar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#select-atack{
+    padding: 199px 0px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+#select-atack h2{
+    color: aliceblue;
+    margin-top:  -43px;
+}
+
+#select-atack p{
+    color: aliceblue;
+    text-align: center;
+}
+
+
+#select-atack button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    padding: 5px 100px;
+    margin: 20px;
+}
+
+
+#mensajes{
+    width: 336px;
+    background: #00ffc84f;
+    color: #f9f9f9;
+    font-weight: 600;
+    padding: 5px;
+    margin-top: 20px;
+    display: flex;
+    text-shadow: #050505;
+    align-items: center;
+    border-radius: 14px;
+    flex-direction: column;
+}
+#mensajes .container{
+    margin-bottom: -49px;
+}
+
+.ataques{
+    display: grid;
+    grid-template-columns: [first] 198px [line2] 50px [line3] auto [col4-start] 50px [five] 37px [end];
+    height: 404px;
+   }
+
+#reinicio button{
+    flex-direction: column;
+    margin: 20px;
+    font-size: 1.3em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 50px;
+
+}
+#footer{
+    text-align: center;
+    background-color: black;
+    height: 10vh;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+
+}
+#footer footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer nav{
+    display: row;
+    
+}
+
+#footer a{
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#footer a:hover{
+    color: rgb(235, 63, 0);
+}
+
+#footer p{
+    color: white;
+}
+
+
+
+
+
+/* Tamaño para escritorio */
+@media (min-width: 600px){
+
+    .container{
+        max-width: 100%;
+    }
+
+  
+    header .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0px;
+        }
+    
+    header .logo{
+        margin: 0;
+        display: inline-block;
+        margin-top: -24px;
+        padding: 0px 16px;
+        font-weight: bold;
+        font-size: 3em;
+        }
+
+
+
+
+
+    #hero .container{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hero h1{
+        font-size: 4em;
+        margin-top: 120px;
+        padding: 10px 30px;
+    }
+    #hero h2 {
+        font-size: 3em;
+        padding: 30px;
+    }
+
+
+    
+    
+
+    #select-monster{
+        padding: 274px 0px;
+        text-align: center;
+         
+        
+    }
+    #select-monster{
+        flex-wrap: row;
+        align-items: center;
+        justify-content: center;
+    }
+    #select-monster h2{
+        font-size: 40px;
+        color:white;
+        font-weight: bold;
+        align-items: center;
+        text-align: center;
+        margin-top: 15px;
+        border-top-width: 0px;
+        margin-bottom: 0px;
+        
+    }
+   
+
+
+    .tarjetas{
+        display: grid;
+        grid-template-columns: repeat(3, .1fr);
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+        
+    
+    
+    
+    .tarjeta-mokepon{
+        width: 212px;
+        height: 212px;
+        padding: 0px;
+        font-weight: 400;
+        color: aliceblue;
+        border: 1.5px solid rgb(255, 255, 255);
+        box-shadow: 2px 2px 10px rgba(36, 226, 83, 0.753);
+        background-color: rgba(0, 0, 0, 0.678);
+        display: flex;
+        margin: 15px;
+        border-radius: 15px;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .tarjeta-mokepon:hover{
+        border: 3px solid rgb(255, 0, 0);
+        box-shadow: 2px 2px 10px rgba(255, 127, 22, 0.753);
+        background-color: rgba(0, 0, 0, 0.678);
+    }
+
+   
+  
+    .tarjeta-mokepon img{
+       width: 116px;
+       height: 116px;
+       align-items: center;
+       display: flex;
+       justify-content: center;
+
+    }
+    
+    .tarjeta-mokepon img:hover{
+        width: 136px;
+        height: 136px;
+    }
+
+    #selct-monster .tarjetas{
+        align-items: center;
+        text-align: center;
+        
+    }
+    
+    
+    #select-monster input{
+       display:none;
+    }
+    
+    
+    
+    #select-monster button{
+        font-size: 2em;
+      
+    }
+
+    #select-atack {
+        height: 1186px;
+        padding-right: 0px;
+        padding-left: 0px;
+        flex-direction: column;
+        align-items: center;    
+    }
+
+
+    .botones{
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+    
+    #select-atack button{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5em;
+        padding: 5px 28px;
+        margin: 20px;
+
+    }
+    
+
+
+
+   #mensajes{
+    width: 600px;
+    font-weight: 600;
+    padding: 60px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 14px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+   }
+
+   #reinicio button{
+    height: 54px;
+    width: 251px;
+   }
+   .ataques{
+    display: grid;
+    grid-template-columns: [first] 350px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+   }
+
+   #footer{
+    text-align: center;
+    background-color: black;
+    height: 10vh;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+
+}
+#footer footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+}
