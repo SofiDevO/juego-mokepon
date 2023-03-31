@@ -221,9 +221,9 @@ header .container{
 }
 
 .tarjeta-mokepon:hover{
-    border: 3px solid rgb(255, 0, 0);
+    border: 3px solid rgb(26, 0, 172);
     box-shadow: 2px 2px 10px rgba(255, 127, 22, 0.753);
-    background-color: rgba(0, 0, 0, 0.678);
+    background-color: rgba(247, 0, 255, 0.404);
 }
 
 #selct-monster {
@@ -239,6 +239,10 @@ header .container{
    display:none;
 }
 
+ input:checked + label{
+    background-color: rgba(247, 0, 255, 0.404);
+    border: 3px solid rgb(26, 0, 172);
+}
 
 
 #select-monster button{
@@ -289,26 +293,35 @@ header .container{
 
 
 #mensajes{
-    width: 336px;
-    background: #00ffc84f;
+    width: 288px;
+    background: #ffe6005b;
     color: #f9f9f9;
     font-weight: 600;
-    padding: 5px;
-    margin-top: 20px;
+    padding: 13px;
+    margin-top: 26px;
+    margin-bottom: 10px;
+    margin-left: 10px;
     display: flex;
     text-shadow: #050505;
     align-items: center;
-    border-radius: 14px;
+    border-radius: 21px;
     flex-direction: column;
 }
-#mensajes .container{
-    margin-bottom: -49px;
+
+.ataques-jugador, .ataques-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(64, 224, 208, 0.26);
+
 }
 
 .ataques{
     display: grid;
-    grid-template-columns: [first] 198px [line2] 50px [line3] auto [col4-start] 50px [five] 37px [end];
-    height: 404px;
+    grid-template-columns: 127px 127px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 34px;
    }
 
 #reinicio button{
@@ -443,38 +456,38 @@ header .container{
         align-items: center;
         justify-content: center;
         justify-items: center;
+        overflow: overlay;
     }
         
     
     
     
+    
+    
     .tarjeta-mokepon{
-        width: 212px;
-        height: 212px;
-        padding: 0px;
-        font-weight: 400;
-        color: aliceblue;
-        border: 1.5px solid rgb(255, 255, 255);
-        box-shadow: 2px 2px 10px rgba(36, 226, 83, 0.753);
-        background-color: rgba(0, 0, 0, 0.678);
-        display: flex;
-        margin: 15px;
-        border-radius: 15px;
-        flex-direction: column;
-        align-content: center;
+     width: 170px;
+    height: 170px;
+    padding: 0px;
+    font-weight: 400;
+    color: aliceblue;
+    border: 1.5px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 10px rgba(36, 226, 83, 0.753);
+    background-color: rgba(0, 0, 0, 0.678);
+    display: flex;
+    margin: 15px;
+    border-radius: 15px;
+    flex-direction: column;
     }
 
     .tarjeta-mokepon:hover{
-        border: 3px solid rgb(255, 0, 0);
-        box-shadow: 2px 2px 10px rgba(255, 127, 22, 0.753);
-        background-color: rgba(0, 0, 0, 0.678);
+        box-shadow: 2px 2px 10px rgba(255, 127, 22, 0.753);        
     }
 
    
   
     .tarjeta-mokepon img{
-       width: 116px;
-       height: 116px;
+       width: 110px;
+       height: 110px;
        align-items: center;
        display: flex;
        justify-content: center;
@@ -484,6 +497,11 @@ header .container{
     .tarjeta-mokepon img:hover{
         width: 136px;
         height: 136px;
+    }
+
+    #select-monster {
+        padding: 25px 0px;
+        text-align: center;
     }
 
     #selct-monster .tarjetas{
@@ -505,11 +523,11 @@ header .container{
     }
 
     #select-atack {
-        height: 1186px;
+        height: 752px;
         padding-right: 0px;
         padding-left: 0px;
         flex-direction: column;
-        align-items: center;    
+        align-items: center;   
     }
 
 
@@ -533,25 +551,19 @@ header .container{
 
 
    #mensajes{
-    width: 600px;
+    margin-left: 140px;
     font-weight: 600;
-    padding: 60px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    border-radius: 14px;
-    font-size: 1.1rem;
-    text-transform: uppercase;
+    padding: 33px;
+    /* margin-top: 14px; */
+    /* display: flex; */
+    border-radius: 20px;
    }
 
    #reinicio button{
     height: 54px;
     width: 251px;
    }
-   .ataques{
-    display: grid;
-    grid-template-columns: [first] 350px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
-   }
+  
 
    #footer{
     text-align: center;
