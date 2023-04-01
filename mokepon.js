@@ -1,7 +1,23 @@
+
 let ataqueJugador
 let ataqueEnemigo
 let vidasJugador = 3
 let vidasEnemigo = 3
+
+class Mokepon {
+    constructor(nombre, foto, vida){
+        this.nombre = nombre;
+        this.foto = foto;
+        this.vida = vida;
+    }
+}
+
+let hipodoge = new Mokepon('Hipodoge', './mokepones/Hipodogue.pxo (1).png', 5);
+let capipepo = new Mokepon('Capipepo', './mokepones/Capipepo.png', 5);
+let ratigueya = new Mokepon('Ratigueya', './mokepones/Ratiguey02a.png', 5);
+let langostelvis = new Mokepon('Langostelvis', './mokepones/Langostelvis.png', 5);
+let tucapalma = new Mokepon('Tucapalma', './mokepones/Tucapalma.png', 5);
+let pydos = new Mokepon('Pydos', './mokepones/Pydos.png', 5);
 
 
 
@@ -70,7 +86,7 @@ function seleccionarMascotaJugador(){
     sectionSeleccionarMascota.style.display = 'none'
 
 
-    let inputHipodogue = document.getElementById('hipodoge');
+    let inputHipodoge = document.getElementById('hipodoge');
     let inputCapipepo =  document.getElementById('capipepo');
     let inputRatigueya = document.getElementById('ratigueya');
     let inputLangostelvis = document.getElementById('langostelvis');
@@ -81,8 +97,8 @@ function seleccionarMascotaJugador(){
     
    
 
-    if(inputHipodogue.checked){
-        spanMascotaJugador.innerHTML = 'Hipodogue'        
+    if(inputHipodoge.checked){
+        spanMascotaJugador.innerHTML = 'Hipodoge'        
     }else if (inputCapipepo.checked){
         spanMascotaJugador.innerHTML = 'Capipepo'
     }else if(inputRatigueya.checked){
@@ -114,7 +130,7 @@ function seleccionarMascotaEnemigo(){
     let spanMascotaEnemigo = document.getElementById('mascota-enemigo')
 
     if (mascotaAleatorio == 1){
-        spanMascotaEnemigo.innerHTML = 'Hipodogue'        
+        spanMascotaEnemigo.innerHTML = 'Hipodoge'        
     }else if(mascotaAleatorio == 2){
         spanMascotaEnemigo.innerHTML = 'Capipepo'
     }else if(mascotaAleatorio == 3){
