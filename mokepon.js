@@ -1,3 +1,15 @@
+let sectionHero = document.getElementById('hero');
+let sectionSeleccionarMascota = document.getElementById('select-monster');
+let sectionReinicio = document.getElementById('reinicio');
+let sectionSeleccionarAtaque = document.getElementById('select-atack');
+
+let botonReInicio = document.getElementById('logo-boton')
+let buttonInicio = document.getElementById('jugar');
+let buttonMascotaJugador = document.getElementById('button-mascota');
+let botonFuego = document.getElementById('button-fuego')
+let botonAgua = document.getElementById('button-agua')
+let botonTierra = document.getElementById('button-tierra')
+let botonReiniciar = document.getElementById("reinicio");
 
 let ataqueJugador
 let ataqueEnemigo
@@ -22,48 +34,23 @@ let pydos = new Mokepon('Pydos', './mokepones/Pydos.png', 5);
 
 
 
+
 function iniciarJuego(){
-   
-   
-    let botonReInicio = document.getElementById('logo-boton')
-    botonReInicio.addEventListener('click', reinicioLogo)
-     
-    let sectionHero = document.getElementById('hero');
-    sectionHero.style.display = 'block'
-
-    let sectionSeleccionarMascota = document.getElementById('select-monster');
-    sectionSeleccionarMascota.style.display = 'none'
-
-    let sectionReinicio = document.getElementById('reinicio');
-    sectionReinicio.style.display = 'none'
-
-    let sectionSeleccionarAtaque = document.getElementById('select-atack');
-    sectionSeleccionarAtaque.style.display = 'none'
-   
-
-    let buttonInicio = document.getElementById('jugar');
-    buttonInicio.addEventListener('click', inicioJuegoo);
-
-   
+    sectionHero.style.display = 'block';
+    sectionSeleccionarMascota.style.display = 'none';
+    sectionReinicio.style.display = 'none';
+    sectionSeleccionarAtaque.style.display = 'none';
     
-    let buttonMascotaJugador = document.getElementById('button-mascota');
+    botonReInicio.addEventListener('click', reinicioLogo);  
+    buttonInicio.addEventListener('click', inicioJuegoo);    
     buttonMascotaJugador.addEventListener('click', seleccionarMascotaJugador);
 
-    
-
-    let botonFuego = document.getElementById('button-fuego')
     botonFuego.addEventListener('click', ataqueFuego);
-    let botonAgua = document.getElementById('button-agua')
     botonAgua.addEventListener('click', ataqueAgua);
-    let botonTierra = document.getElementById('button-tierra')
     botonTierra.addEventListener('click', ataqueTierra);
 
-    let botonReiniciar = document.getElementById("reinicio");
-    botonReiniciar.addEventListener('click', reiniciarJuego);
 
-    
-        
-     
+    botonReiniciar.addEventListener('click', reiniciarJuego);     
 }
 
 
