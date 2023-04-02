@@ -1,21 +1,53 @@
-let sectionHero = document.getElementById('hero');
-let sectionSeleccionarMascota = document.getElementById('select-monster');
-let sectionReinicio = document.getElementById('reinicio');
-let sectionSeleccionarAtaque = document.getElementById('select-atack');
+/* function iniciarJuego */
+const botonReInicio = document.getElementById('logo-boton') /* Al presionar el logo de mokepon, vuelve a inicio */
+const sectionHero = document.getElementById('hero');
+const sectionSeleccionarMascota = document.getElementById('select-monster');
+const sectionReinicio = document.getElementById('reinicio'); /*boton de reiniciooculto, display =none */
+const sectionSeleccionarAtaque = document.getElementById('select-atack');
 
-let botonReInicio = document.getElementById('logo-boton')
-let buttonInicio = document.getElementById('jugar');
-let buttonMascotaJugador = document.getElementById('button-mascota');
-let botonFuego = document.getElementById('button-fuego')
-let botonAgua = document.getElementById('button-agua')
-let botonTierra = document.getElementById('button-tierra')
-let botonReiniciar = document.getElementById("reinicio");
+
+const buttonInicio = document.getElementById('jugar');
+const buttonMascotaJugador = document.getElementById('button-mascota');
+/* Botones de ataques */
+const botonFuego = document.getElementById('button-fuego')
+const botonAgua = document.getElementById('button-agua')
+const botonTierra = document.getElementById('button-tierra')
+const botonReiniciar = document.getElementById("reinicio");
+
+
+/* function seleccionarMascotaEnemigo */
+const spanMascotaEnemigo = document.getElementById('mascota-enemigo')
+
+
+/* function combate */
+const spanVidasJugador = document.getElementById('vidas-jugador');
+const spanVidasEnemigo = document.getElementById('vidas-enemigo');
+
+/* function crearMensaje */
+const sectionMensajes = document.getElementById('resultado')
+const sectionAtaquesJugador = document.getElementById('ataques-jugador')
+const sectionAtaquesEnemigo = document.getElementById('ataques-enemigo')
+
+
+
+
+
+let inputHipodoge = document.getElementById('hipodoge');
+let inputCapipepo =  document.getElementById('capipepo');
+let inputRatigueya = document.getElementById('ratigueya');
+let inputLangostelvis = document.getElementById('langostelvis');
+let inputTucapalma = document.getElementById('tucapalma');
+let inputPydos = document.getElementById('pydos');
+let spanMascotaJugador = document.getElementById('mascota-jugador')
+
+
 
 let ataqueJugador
 let ataqueEnemigo
 let vidasJugador = 3
 let vidasEnemigo = 3
 
+/* Definir  Personajes por Objeto */
 class Mokepon {
     constructor(nombre, foto, vida){
         this.nombre = nombre;
@@ -36,8 +68,10 @@ let pydos = new Mokepon('Pydos', './mokepones/Pydos.png', 5);
 
 
 function iniciarJuego(){
+    /* Pantalla principal Display Block/none */
     sectionHero.style.display = 'block';
     sectionSeleccionarMascota.style.display = 'none';
+    /* Pasa a  pantalla de seleccionar mascota */
     sectionReinicio.style.display = 'none';
     sectionSeleccionarAtaque.style.display = 'none';
     
@@ -56,33 +90,14 @@ function iniciarJuego(){
 
 
 function inicioJuegoo(){
-    let sectionHero = document.getElementById('hero');
-    sectionHero.style.display = 'none'
-   
-    let sectionSeleccionarMascota = document.getElementById('select-monster');
+    sectionHero.style.display = 'none'   
     sectionSeleccionarMascota.style.display = 'block'
 }    
      
 
-function seleccionarMascotaJugador(){
-   
-    
-    let sectionSeleccionarAtaque = document.getElementById('select-atack');
+function seleccionarMascotaJugador(){    
     sectionSeleccionarAtaque.style.display = 'flex'    
-    let sectionSeleccionarMascota = document.getElementById('select-monster');
-    sectionSeleccionarMascota.style.display = 'none'
-
-
-    let inputHipodoge = document.getElementById('hipodoge');
-    let inputCapipepo =  document.getElementById('capipepo');
-    let inputRatigueya = document.getElementById('ratigueya');
-    let inputLangostelvis = document.getElementById('langostelvis');
-    let inputTucapalma = document.getElementById('tucapalma');
-    let inputPydos = document.getElementById('pydos');
-    let spanMascotaJugador = document.getElementById('mascota-jugador')
-    
-    
-   
+    sectionSeleccionarMascota.style.display = 'none'   
 
     if(inputHipodoge.checked){
         spanMascotaJugador.innerHTML = 'Hipodoge'        
@@ -100,21 +115,15 @@ function seleccionarMascotaJugador(){
     sectionSeleccionarAtaque.style.display = 'none'    
     let sectionSeleccionarMascota = document.getElementById('select-monster');
     sectionSeleccionarMascota.style.display = 'block'
-          alert('debes elegir un Mokepon')
-      
-        
-     
-        
+          alert('debes elegir un Mokepon') 
     }     
     
-
     seleccionarMascotaEnemigo()
 }
 
 
 function seleccionarMascotaEnemigo(){
     let mascotaAleatorio = aleatorio(1, 6)
-    let spanMascotaEnemigo = document.getElementById('mascota-enemigo')
 
     if (mascotaAleatorio == 1){
         spanMascotaEnemigo.innerHTML = 'Hipodoge'        
@@ -167,10 +176,7 @@ function ataqueAleatorioEnemigo(){
 }
 
 
-function combate(){
-    
-    let spanVidasJugador = document.getElementById('vidas-jugador');
-    let spanVidasEnemigo = document.getElementById('vidas-enemigo');
+function combate(){    
 
 
     if(ataqueEnemigo == ataqueJugador){
@@ -206,19 +212,13 @@ function revisarVidas(){
     }
 }
 
-function crearMensaje(resultado){
-    let sectionMensajes = document.getElementById('resultado')
-    let sectionAtaquesJugador = document.getElementById('ataques-jugador')
-    let sectionAtaquesEnemigo = document.getElementById('ataques-enemigo')
-
-    
+function crearMensaje(resultado){    
     let nuevoAtaqueJugador = document.createElement('p'); 
     let nuevoAtaqueEnemigo = document.createElement('p'); 
 
     sectionMensajes.innerHTML= resultado;
     nuevoAtaqueJugador.innerHTML = ataqueJugador;
     nuevoAtaqueEnemigo.innerHTML = ataqueEnemigo;
-
     
     
     sectionAtaquesJugador.appendChild(nuevoAtaqueJugador);
@@ -227,23 +227,18 @@ function crearMensaje(resultado){
 }
 
 function crearMensajeFinal(resultadoFinal){
-    let sectionMensajes = document.getElementById('resultado')
     
     sectionMensajes.innerHTML = resultadoFinal
     
     
 
-    let botonFuego = document.getElementById('button-fuego')
     botonFuego.disabled = true;
     
-    let botonAgua = document.getElementById('button-agua')
     botonAgua.disabled = true;
     
-    let botonTierra = document.getElementById('button-tierra')
     botonTierra.disabled = true;
 
     
-    let sectionReinicio = document.getElementById('reinicio');
     sectionReinicio.style.display = 'block'
 
    
