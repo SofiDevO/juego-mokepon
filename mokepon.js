@@ -40,12 +40,15 @@ let inputTucapalma = document.getElementById('tucapalma');
 let inputPydos = document.getElementById('pydos');
 let spanMascotaJugador = document.getElementById('mascota-jugador')
 
-
+let mokepones = []
 
 let ataqueJugador
 let ataqueEnemigo
 let vidasJugador = 3
 let vidasEnemigo = 3
+
+
+
 
 /* Definir  Personajes por Objeto */
 class Mokepon {
@@ -53,6 +56,7 @@ class Mokepon {
         this.nombre = nombre;
         this.foto = foto;
         this.vida = vida;
+        this.ataques = []
     }
 }
 
@@ -64,7 +68,7 @@ let tucapalma = new Mokepon('Tucapalma', './mokepones/Tucapalma.png', 5);
 let pydos = new Mokepon('Pydos', './mokepones/Pydos.png', 5);
 
 
-
+console.log(hipodoge);
 
 
 function iniciarJuego(){
@@ -93,7 +97,7 @@ function inicioJuegoo(){
     sectionHero.style.display = 'none'   
     sectionSeleccionarMascota.style.display = 'block'
 }    
-     
+
 
 function seleccionarMascotaJugador(){    
     sectionSeleccionarAtaque.style.display = 'flex'    
@@ -115,7 +119,7 @@ function seleccionarMascotaJugador(){
     sectionSeleccionarAtaque.style.display = 'none'    
     let sectionSeleccionarMascota = document.getElementById('select-monster');
     sectionSeleccionarMascota.style.display = 'block'
-          alert('debes elegir un Mokepon') 
+    alert('debes elegir un Mokepon') 
     }     
     
     seleccionarMascotaEnemigo()
@@ -172,7 +176,7 @@ function ataqueAleatorioEnemigo(){
     }
 
     combate()
-     
+
 }
 
 
@@ -239,10 +243,9 @@ function crearMensajeFinal(resultadoFinal){
     botonTierra.disabled = true;
 
     
-    sectionReinicio.style.display = 'block'
+    sectionReinicio.style.display = 'block';
 
-   
-    
+
 
 }
 
