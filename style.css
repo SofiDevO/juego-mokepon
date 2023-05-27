@@ -9,15 +9,11 @@
 
 *{
     box-sizing: border-box;
-    
-
 }
+
 html{
     scroll-behavior: smooth;
-    
 }
-
-
 
 body{
     margin:0;
@@ -36,8 +32,6 @@ body{
     background-size: cover;
     background-position: center;  
 }
-    
-
 
 
 h1{font-size: 3.5em;}
@@ -72,8 +66,6 @@ header{
     flex-direction: column;
     align-items: center;
 }
-
-
 
 
 header .logo{
@@ -267,6 +259,9 @@ input:checked + label{
 
 }
 
+#resultado{
+    width: 236px;
+}
 
 
 
@@ -378,9 +373,7 @@ input:checked + label{
 @media screen and (min-width: 600px){
 
 
-    #hero{
-        height: 816px;
-    }
+    
     .container{
         max-width: 100%;
         display: flex;
@@ -429,23 +422,14 @@ input:checked + label{
     
     
 
-    #select-monster{
-        height: 815px;
 
-        
-    }
-    #select-monster{
-        flex-wrap: row;
-        align-items: center;
-        justify-content: center;
-    }
     #select-monster h2{
-        font-size: 40px;
-        color: white;
-        font-weight: bold;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+}
         
-    }
-   
+
 
 
     .tarjetas{
@@ -462,7 +446,7 @@ input:checked + label{
     
     
     .tarjeta-mokepon{
-     width: 170px;
+    width: 170px;
     height: 170px;
     padding: 0px;
     font-weight: 400;
@@ -547,35 +531,33 @@ input:checked + label{
     .ataques{
         display: grid;
         justify-items: stretch;
-
         height: 274px;
     }
 
 
 
-   #mensajes{
 
+    
+    #mensajes{
         font-weight: 600;
         display: flex;
         padding: -1px;
         border-radius: 20px;
         align-items: center;
-   }
+    }
 
-   #reinicio button{
-    height: 54px;
-    width: 251px;
-   }
-  
+    #reinicio button{
+        height: 54px;
+        width: 251px;
+    }
 
-  
     #footer .container{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         width: 100%;
         padding: 0 44px;
-        height: 100px;
+        height: 160px;
     }
 
     #footer a{        

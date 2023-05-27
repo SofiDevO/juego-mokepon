@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style.css">
-         
+        <link rel="shortcut icon" href="./mokepones/Hipodogue.pxo (1).png" type="image/x-icon">
         <title>Mokepon</title>
     </head>
+
     
     <body>
         <header>
             <div class="container">
                 <p class="logo" id="logo-boton">Mokepon</p>
             </div>
-
-
-            
         </header>
+
         <section id="hero">
             <div class="container">
                 <h1>Battle Arena</h1>
@@ -26,57 +25,51 @@
             </div>
         </section>
 
-
-
         <section id="select-monster"> <!-- Carrusel, padre -->
             <h2>Elige tu mascota:</h2>
             <div class="tarjetas">
-                    <input type="radio" name="mascota"  id="hipodoge"/>                
-                    <label class="tarjeta-mokepon" for="hipodoge">
-                        <p>Hipodoge</p> 
-                        <img src="./mokepones/Hipodogue.pxo (1).png" alt="Hipodoge">
-                    </label>
-                    <input type="radio" name="mascota"  id="hipodoge"/>
-                    
-                    <input type="radio"  name="mascota" id="capipepo"/>
-                    <label class="tarjeta-mokepon"  for="capipepo"> <p>Capipepo</p> 
-                        <img src="./mokepones/Capipepo.png" alt="Capipepo">
-                    </label>
-                    <input type="radio"  name="mascota" id="capipepo"/>
-                    
-                    <input type="radio"  name="mascota" id="ratigueya"/>
-                    <label class="tarjeta-mokepon"  for="ratigueya"> <p>Ratigueya</p> 
-                        <img src="./mokepones/Ratiguey02a.png" alt="Ratigueya">
-                    </label>
-                    <input type="radio"  name="mascota" id="ratigueya"/>
-                    
-                    <input type="radio"  name="mascota" id="langostelvis"/>
-                    <label class="tarjeta-mokepon"  for="langostelvis"> <p>Langostelvis</p> 
-                        <img src="./mokepones/Langostelvis.png" alt="Langostelvis"></label>
-                    <input type="radio"  name="mascota" id="langostelvis"/>
-                    
-                    <input type="radio"  name="mascota" id="tucapalma"/>
-                    <label class="tarjeta-mokepon"  for="tucapalma"> <p>Tucapalma</p> 
-                        <img src="./mokepones/Tucapalma.png" alt="Tucapalma"></label>
-                    <input type="radio"  name="mascota" id="tucapalma"/>
-                    
-                    <input type="radio" name="mascota"  id="pydos"/>
-                    <label class="tarjeta-mokepon"  for="pydos"> <p>Pydos</p> 
-                        <img src="./mokepones/Pydos.png" alt="Pydos"></label>
-                    <input type="radio" name="mascota"  id="pydos"/>
-                </div>
-             
-                <section id="seleccionar">
-               
-                    <button id="button-mascota">Seleccionar</button>
-               
-               </section>
+                <input type="radio" name="mascota"  id="hipodoge"/>                
+                <label class="tarjeta-mokepon" for="hipodoge">
+                    <p>Hipodoge</p> 
+                    <img src="./mokepones/Hipodogue.pxo (1).png" alt="Hipodoge">
+                </label>
 
-        </section>
+                <input type="radio"  name="mascota" id="capipepo"/>
+                <label class="tarjeta-mokepon"  for="capipepo"> <p>Capipepo</p> 
+                    <img src="./mokepones/Capipepo.png" alt="Capipepo">
+                </label>
                 
+                <input type="radio"  name="mascota" id="ratigueya"/>
+                <label class="tarjeta-mokepon"  for="ratigueya">
+                    <p>Ratigueya</p> 
+                    <img src="./mokepones/Ratiguey02a.png" alt="Ratigueya">
+                </label>
+                
+                <input type="radio"  name="mascota" id="langostelvis"/>
+                <label class="tarjeta-mokepon"  for="langostelvis">
+                    <p>Langostelvis</p> 
+                    <img src="./mokepones/Langostelvis.png" alt="Langostelvis">
+                </label>
+                
+                <input type="radio"  name="mascota" id="tucapalma"/>
+                <label class="tarjeta-mokepon"  for="tucapalma"> 
+                    <p>Tucapalma</p> 
+                    <img src="./mokepones/Tucapalma.png" alt="Tucapalma">
+                </label>    
+                
+                <input type="radio" name="mascota"  id="pydos"/>
+                <label class="tarjeta-mokepon"  for="pydos"> 
+                    <p>Pydos</p> 
+                    <img src="./mokepones/Pydos.png" alt="Pydos">
+                </label>
+            </div>
+            <section id="seleccionar">
+                <button id="button-mascota">Seleccionar</button>
+            </section>
+        </section>
+
         <section id="select-atack">
             <div class="container">
-
                 <h2>Elige tu ataque:</h2>
                 <div class="botones">    
                     <button id="button-fuego">fuego🔥</button>
@@ -84,19 +77,14 @@
                     <button id="button-tierra">tierra🌿</button>             
                 </div>
 
+
                 
                 <div id="mensajes">
-                <p id="resultado">¡A pelear!</p>
-
-                <section id="reinicio">
-                   
-                    <button id="button-reset">volver a jugar</button>
-                    
-                </section>
+                    <p id="resultado">¡A pelear!</p>
+                    <section id="reinicio">
+                        <button id="button-reset">volver a jugar</button>
+                    </section>
                 </div> 
-                    
-                    
-              
                 <div class="ataques">
                     <div class="ataques-jugador">
                         <p id="mascota-jugador"></p>
@@ -111,12 +99,7 @@
                     </div>                    
                 </div>                     
             </div>
-                    
         </section>
-
-        
-
-       
 
         <section id="footer">
             <div class="container">      
