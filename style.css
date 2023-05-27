@@ -15,11 +15,11 @@
 html{
     scroll-behavior: smooth;
     
-  }
-  
-  
-  
-  body{
+}
+
+
+
+body{
     margin:0;
     font-family: 'Poppins', sans-serif;
 
@@ -35,10 +35,10 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;  
+}
     
 
 
-}
 
 h1{font-size: 3.5em;}
 h2{font-size: 2em;}
@@ -58,12 +58,9 @@ button{
 }
 
 button:hover{
-     background-color: black;
-     color: white;
+    background-color: black;
+    color: white;
 }
-
-
-    
 
 header{
     background-color: rgba(0, 0, 0, 0.336);
@@ -74,9 +71,9 @@ header{
     z-index: 1001;
     flex-direction: column;
     align-items: center;
-
-    
 }
+
+
 
 
 header .logo{
@@ -91,11 +88,6 @@ header .logo{
     cursor: pointer;
     align-items: center;
 }
-    
-
-
-
-
 
 header .container{
     display: flex;
@@ -103,7 +95,7 @@ header .container{
     align-items: center;
     width:100%;
     margin: -62px;
-  }
+}
 
 
 
@@ -117,8 +109,6 @@ header .container{
     background-size: cover;
     background-position: center;    
 }
-
-   
 
 #hero .container{
     display: flex;
@@ -159,31 +149,21 @@ header .container{
     height: 733px;
 }
 
-
-    
-
-
 #select-monster h2{
     font-size: 30px;
     color:white;
     font-weight: bold;
-
     text-align: center;
-
-    
 }
+
+
 .tarjetas{
     display: flex;
     overflow: scroll;
-    flex-wrap: wrap;
-    height: 395px;
+    flex-wrap: nowrap;
+    height: 289px;
     padding: 15px;
 }
-
-
-
-
-
 
 .tarjeta-mokepon{    
     width: 184px;
@@ -208,10 +188,10 @@ header .container{
 .tarjeta-mokepon img{
     width: 135;
     height: 122px;
-   align-items: center;
-   display: flex;
-   justify-content: center;
-   margin-left: 3px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 3px;
 }
 
 .tarjeta-mokepon img:hover{
@@ -234,10 +214,10 @@ header .container{
 
 
 #select-monster input{
-   display:none;
+    display:none;
 }
 
- input:checked + label{
+input:checked + label{
     background-color: rgba(247, 0, 255, 0.404);
     border: 3px solid rgb(26, 0, 172);
 }
@@ -284,7 +264,7 @@ header .container{
 #select-atack p{
     color: aliceblue;
     text-align: center;
-    width: 244px;
+
 }
 
 
@@ -329,9 +309,9 @@ header .container{
     align-items: center;
     justify-content: center;
     column-gap: 34px;
-
     height: 274px;
-   }
+    overflow: auto;
+}
 
 #reinicio button{
     flex-direction: column;
@@ -347,24 +327,20 @@ header .container{
 #footer{
     text-align: center;
     background-color: black;
-    /* height: 12vh; */
     display: flex;
-    /* width: 100%; */
+    width: 100%;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 
 }
 
 #footer .container{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-#footer nav{
-    display: row;
-    
+    height: 150px;
+    flex-wrap: wrap;
 }
 
 #footer a{
@@ -382,8 +358,20 @@ header .container{
     color: white;
 }
 
+.github{
+    filter: invert(100%);
+    width: 25px;
+}
 
+.linkedin{
+    filter: invert(27%) sepia(62%) saturate(6382%) hue-rotate(214deg) brightness(103%) contrast(105%);
+    width: 25px;
+}
 
+.platzi{
+    filter: invert(46%) sepia(87%) saturate(434%) hue-rotate(52deg) brightness(94%) contrast(90%);
+    width: 25px;
+}
 
 
 /* Tamaño para escritorio */
@@ -405,13 +393,12 @@ header .container{
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-top: 0px;
+
         }
     
     header .logo{
         margin: 0;
         display: inline-block;
-        margin-top: -24px;
         padding: 0px 16px;
         font-weight: bold;
         font-size: 3em;
@@ -466,7 +453,7 @@ header .container{
         grid-template-columns: repeat(3, .1fr);
         justify-content: center;
         overflow: overlay;
-        height: 407px;
+        height: 439px;
     }
         
     
@@ -581,22 +568,14 @@ header .container{
    }
   
 
-   #footer{
-    text-align: center;
-    background-color: black;
-    height: 12vh;
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    }
+  
     #footer .container{
-        display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 888px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 44px;
+        height: 100px;
     }
 
     #footer a{        
