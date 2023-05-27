@@ -34,7 +34,7 @@ html{
     ,url("img/bosque.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;  
+    background-position: center;  
     
 
 
@@ -112,25 +112,20 @@ header .container{
     align-items: center;
     justify-content: center;
     text-align: center ;
-
     color: white;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.76),
-        rgba(0, 0, 0, 0.801)
-    )
-    ,url("img/bosque.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;    
+    background-position: center;    
 }
+
+   
 
 #hero .container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    height: 766px;
+    height: 638px;
     
 }
 #hero h1{
@@ -235,8 +230,7 @@ header .container{
     display: flex;
     height: 775px;
 }
-    
-    
+
 
 
 #select-monster input{
@@ -264,27 +258,37 @@ header .container{
 
 
 #select-atack{
-    padding: 199px 0px;
+    height: 719px;
     text-align: center;
     flex-direction: column;
     align-items: center;
-    display: flex;
     justify-content: center;
 }
 
-
+#select-atack .container{
+    display: flex;
+    flex-direction: column;
+    height: 679px;
+    align-items: center;
+    gap: 15px;
+}
 
 
 
 #select-atack h2{
     color: aliceblue;
- 
+    margin: 0;
 }
+
 
 #select-atack p{
     color: aliceblue;
     text-align: center;
+    width: 244px;
 }
+
+
+
 
 
 #select-atack button{
@@ -300,20 +304,16 @@ header .container{
 
 
 #mensajes{
-    width: 288px;
     background: #ffe6005b;
     color: #f9f9f9;
     font-weight: 600;
-    padding: 13px;
-    margin-top: 26px;
-    margin-bottom: 10px;
-    margin-left: 10px;
     display: flex;
-    text-shadow: #050505;
     align-items: center;
     border-radius: 21px;
     flex-direction: column;
 }
+
+
 
 .ataques-jugador, .ataques-enemigo{
     display: flex;
@@ -329,6 +329,8 @@ header .container{
     align-items: center;
     justify-content: center;
     column-gap: 34px;
+
+    height: 274px;
    }
 
 #reinicio button{
@@ -558,7 +560,7 @@ header .container{
     .ataques{
         display: grid;
         justify-items: stretch;
-        overflow: auto;
+
         height: 274px;
     }
 
